@@ -5,10 +5,12 @@
 </head>
 <body>
   <h1>Vote</h1>
-    <button type="button" name="vote" value="1"> voto 1</button>
-    <button type="button" name="vote" value="2"> voto 2</button>
-    <button type="button" name="vote" value="3"> voto 3</button>
-    <button type="button" name="vote" value="4"> voto 4</button>
+    <button type="button" name="vote" value="1"> voto 1 </button>
+    <button type="button" name="vote" value="2"> voto 2 </button>
+    <button type="button" name="vote" value="3"> voto 3 </button>
+    <button type="button" name="vote" value="4"> voto 4 </button>
+    <button type="button" name="vote" value="nulo"> nulo </button>
+    <button type="button" name="vote" value="branco"> branco </button>
     <button type="submit" value="concluir">concluir</button>
     <button type="reset" value="votar novamente">vote novamente</button>
     <div id="results"></div>
@@ -17,7 +19,9 @@
     1: 0,
     2: 0,
     3: 0,
-    4: 0
+    4: 0,
+    nulo: 0,
+    branco: 0
   };
 
   function vote(buttonValue) {
